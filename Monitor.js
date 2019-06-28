@@ -61,7 +61,7 @@ class Monitor {
       const sms = new SMS({ price, url: this.oriURL});
       sms.send();
     } else {
-      console.log(formatTime(new Date()), 'continue');
+      console.log(formatTime(new Date()), price);
       setTimeout(() => this.fetchData(), 30000);
     }
   }
